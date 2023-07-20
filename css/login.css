@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  user-select:none;
 }
 
 .login__header {
@@ -18,9 +19,19 @@
   width: 100px;
 }
 
-.login__header h1 {
+.login__header h1, h2{
   color: #333;
   font-size: 1.5em;
+}
+
+.interroga{
+position:absolute;
+top:20px;
+font-size:0.5em;
+}
+
+.interroga:hover{
+color:purple;
 }
 
 .login__input {
