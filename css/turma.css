@@ -1,18 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/turma.css">
-  <script defer src="../js/game.js"></script>
+*{
+box-sizing:border-box;	
+}
 
-  <title>Memory Game</title>
-</head>
-<body>
+.ft{
+position:relative;
+top:0;
+}
 
-  <main>
-   oi
-  </main>
+.par{
+text-align:justify;
+font-size:20px;
+}
 
-</body>
-</html>
+.img-projeto{
+	width:300px;
+	height:389px;
+}
+
+.classio{
+margin-top:20px;	
+}
