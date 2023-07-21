@@ -3,12 +3,13 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url('../images/bg.jpg');
+  background-image: url('https://media-public.canva.com/11d_A/MAEg5311d_A/1/tl.jpg');
   background-size: cover;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   padding: 20px 20px 50px;
+  user-select:none;
 }
 
 header {
@@ -22,6 +23,7 @@ header {
   padding: 30px;
   margin: 0 0 30px;
   border-radius: 5px;
+  border:purple solid 1.5px;
 }
 
 .grid {
@@ -36,7 +38,7 @@ header {
 .card {
   aspect-ratio: 3/4;
   width: 100%;
-  border-radius: 5px purple;
+  border-radius: 5px;
   position: relative;
   transition: all 400ms ease;
   transform-style: preserve-3d;
@@ -59,8 +61,27 @@ header {
 }
 
 .back {
-  background-image: url('../images/back.png');
+  background-image: url('https://media-private.canva.com/IQjL0/MAFpJJIQjL0/1/tl.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230720%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230720T041727Z&X-Amz-Expires=17688&X-Amz-Signature=28358e1445b4cc442cf1ec83d76082c6cec194b4c97065589ba911ace09614c2&X-Amz-SignedHeaders=host&response-expires=Thu%2C%2020%20Jul%202023%2009%3A12%3A15%20GMT');
   backface-visibility: hidden;
+}
+
+.placa{
+position:relative;
+left:20px;
+bottom:-10px;
+font-size:30px;  
+font-family: Helvetica;
+font-weight:900;
+color:#000;
+opacity:70%;
+}
+
+.placa:hover{
+	opacity:100%;
+	font-size:30px;
+    color:#fff;
+	transition:.4s;
+
 }
 
 .reveal-card {

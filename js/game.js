@@ -1,7 +1,6 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
-const timer = document.querySelector('.timer');
-
+const timer = document.querySelector('.timer'); 
 const characters = [
   'Fernando',
   'Bianca',
@@ -13,7 +12,6 @@ const characters = [
   'Sylvia',
   'João',
   'Clarice',
-  
 ];
 
 const createElement = (tag, className) => {
@@ -59,32 +57,26 @@ const checkCards = () => {
 
     }, 500);
   }
-
 }
 
 const revealCard = ({ target }) => {
-
   if (target.parentNode.className.includes('reveal-card')) {
     return;
   }
 
   if (firstCard === '') {
-
     target.parentNode.classList.add('reveal-card');
     firstCard = target.parentNode;
 
   } else if (secondCard === '') {
-
     target.parentNode.classList.add('reveal-card');
     secondCard = target.parentNode;
 
     checkCards();
-
   }  
 }
 
 const createCard = (character) => {
-
   const card = createElement('div', 'card');
   const front = createElement('div', 'face front');
   const back = createElement('div', 'face back');
@@ -95,14 +87,13 @@ const createCard = (character) => {
   card.appendChild(back);
 
   card.addEventListener('click', revealCard);
-  card.setAttribute('data-character', character)
+  card.setAttribute('data-character', character);
 
   return card;
 }
 
 const loadGame = () => {
   const duplicateCharacters = [ ...characters, ...characters ];
-
   const shuffledArray = duplicateCharacters.sort(() => Math.random() - 0.5);
 
   shuffledArray.forEach((character) => {
@@ -112,12 +103,18 @@ const loadGame = () => {
 }
 
 const startTimer = () => {
-
   this.loop = setInterval(() => {
     const currentTime = +timer.innerHTML;
     timer.innerHTML = currentTime + 1;
-  }, 1000);
 
+   const tempo = parseInt(timer.innerHTML);
+if (tempo >= 100) {
+  timer.style.color = "red";
+} else if (tempo >= 300) {
+  timer.style.color = "yellow";
+}
+    checkEndGame();
+  }, 1000);
 }
 
 window.onload = () => {

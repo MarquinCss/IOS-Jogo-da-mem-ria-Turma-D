@@ -25,13 +25,17 @@
 }
 
 .interroga{
+	text-align:center;
 position:absolute;
+color:#000;
+text-decoration:none;
 top:20px;
 font-size:0.5em;
 }
 
 .interroga:hover{
 color:purple;
+cursor:pointer;
 }
 
 .login__input {
@@ -45,7 +49,6 @@ color:purple;
   padding: 15px;
   width: 100%;
 }
-
 .login__button {
   background-color: purple;
   border-radius: 8px;
@@ -62,3 +65,5 @@ color:purple;
   color: #aaa;
   cursor: auto;
 }
+
+  
