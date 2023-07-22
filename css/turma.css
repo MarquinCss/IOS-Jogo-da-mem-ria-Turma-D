@@ -5,6 +5,7 @@ box-sizing:border-box;
 .ft{
 position:relative;
 top:0;
+margin-top:20px!important;
 }
 
 .par{
@@ -13,10 +14,34 @@ font-size:20px;
 }
 
 .img-projeto{
-	width:300px;
-	height:389px;
+	width:500px;
+	height:349px;
+	object-fit:cover;
 }
 
 .classio{
-margin-top:20px;	
+margin-top:5px;	
+display:flex;
+}
+
+.icon{
+	margin-top:50px;
+	font-size:50px;
+}
+
+@media screen and (max-width: 850px) {
+.td{
+position:relative;
+top:4px;
+}
+
+.par{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+max-width:370px;
+text-align:center;
+}
+
+
 }
