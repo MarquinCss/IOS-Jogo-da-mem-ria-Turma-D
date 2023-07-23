@@ -60,12 +60,10 @@ header {
   transform: rotateY(180deg);
 }
 
- .back {
-      background-image: url('../images/back.png');
-      backface-visibility: hidden;
-      
-	  
- }
+.back {
+  background-image: url('../images/back.png');
+  backface-visibility: hidden;
+}
 
 .placa{
 position:relative;
