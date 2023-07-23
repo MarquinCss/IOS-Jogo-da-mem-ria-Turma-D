@@ -57,6 +57,7 @@ header {
 }
 
 .front {
+	
   transform: rotateY(180deg);
 }
 
