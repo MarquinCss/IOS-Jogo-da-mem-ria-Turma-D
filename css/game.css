@@ -57,12 +57,11 @@ header {
 }
 
 .front {
-	
   transform: rotateY(180deg);
 }
 
 .back {
-  background-image: url('oi.png');
+  background-image: url('../images/back.png');
   backface-visibility: hidden;
 }
 
