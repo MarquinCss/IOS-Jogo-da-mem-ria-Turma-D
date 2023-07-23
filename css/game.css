@@ -63,8 +63,8 @@ header {
  .back {
       background-image: url('../images/back.png');
       backface-visibility: hidden;
-      width: 200px;
-      height: 300px;
+       aspect-ratio: 3/4;
+  width: 100%;
 	  
  }
 
