@@ -65,6 +65,8 @@ header {
       backface-visibility: hidden;
       width: 200px;
       height: 300px;
+	  
+ }
 
 .placa{
 position:relative;
